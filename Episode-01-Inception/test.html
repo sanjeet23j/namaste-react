@@ -8,6 +8,7 @@
   <body>
     <div id="root"></div>
     <div id="root2"></div>
+    <div id="root3"></div>
 
     <script>
       const heading = document.createElement("h1");
@@ -32,6 +33,12 @@
       const rootEle = ReactDOM.createRoot(document.getElementById("root2"));
 
       rootEle.render(heading2);
+
+      const para = React.createElement("p", {}, "Hello Paragraph");
+
+      const rootPara = ReactDOM.createRoot(document.getElementById("root3"));
+
+      rootPara.render(para);
     </script>
   </body>
 </html>
